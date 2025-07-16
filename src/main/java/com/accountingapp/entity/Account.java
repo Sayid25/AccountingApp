@@ -20,6 +20,8 @@ public class Account extends AuditableEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String accountNumber;
+
     private BigDecimal balance;
 
     @Enumerated(EnumType.STRING)

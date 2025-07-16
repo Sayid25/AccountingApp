@@ -24,6 +24,7 @@ public class Transaction extends AuditableEntity {
     private Long id;
 
     @ManyToOne(optional = false)
+    @JoinColumn(name = "debit_account_id")
     private Account debitAccount;
 
     @ManyToOne(optional = false)

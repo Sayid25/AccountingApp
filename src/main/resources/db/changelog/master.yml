@@ -1,3 +1,5 @@
 databaseChangeLog:
   - include:
       file: classpath:/db/changelog/changes/init_changes.sql
+  - include:
+      file: classpath:/db/changelog/changes/insert_mock_data.sql
