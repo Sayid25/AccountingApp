@@ -19,6 +19,7 @@ VALUES
     ('10000000000000000005', 20000.00, 'ACTIVE', 5);
 
 -- changeset init:7
+-- Insert 10 transactions
 INSERT INTO accounting_schema.transaction (debit_account_id, credit_account_id, transaction_status, description, amount)
 VALUES
     (1, 2, 'SUCCESS', 'Alice sends money to Bob', 200.00),
