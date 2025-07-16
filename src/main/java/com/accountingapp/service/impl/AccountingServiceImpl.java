@@ -31,7 +31,7 @@ public class AccountingServiceImpl implements AccountingService {
 
     public Account findAccountByNumber(String accountNumber) {
         return repository.findByAccountNumber(accountNumber).orElseThrow(() ->
-                new RuntimeException("Account not found {}"));
+                new RuntimeException("Account not found"));
     }
 
     @Override

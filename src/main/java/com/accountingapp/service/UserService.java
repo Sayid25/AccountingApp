@@ -18,4 +18,6 @@ public interface UserService {
     ResponseEntity<UserResponse> update(UserUpdateRequest request, Long userId);
 
     User findUserById(Long id);
+
+    User findUserByUsername(String username);
 }

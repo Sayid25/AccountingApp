@@ -12,3 +12,6 @@ spring:
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/master.yml
+  token:
+    key: m0hPz1vYQ76tE5bGxwA4Kb0Vax5bcACWo0vNFh4A/Mc=
+    expireTime: 300_000

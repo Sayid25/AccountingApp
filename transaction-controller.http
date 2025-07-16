@@ -17,9 +17,11 @@ Accept: application/json
 ###
 
 ### Transfer money from one account to another
+### Get access token from response of login auth-controller.http
 POST http://localhost:8080/api/v1/transaction/transfer
 Content-Type: application/json
 Accept: application/json
+Authorization: Bearer token
 
 {
   "debitAccountNumber": "10000000000000000002",

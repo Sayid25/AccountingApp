@@ -1,18 +1,19 @@
 package com.accountingapp.dto.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data
 public class UserRequest {
-    @NotNull
+    @NotBlank
     private String username;
 
-    @NotNull
+    @NotBlank
     private String password;
 
     @JsonProperty("full_name")
-    @NotNull
+    @NotBlank
     private String fullName;
 }

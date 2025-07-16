@@ -37,6 +37,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResponseEntity<UserResponse> getById(Long id) {
         User user = findUserById(id);
+
         return ResponseEntity.ok(modelMapper.map(user, UserResponse.class));
     }
 
@@ -60,11 +61,19 @@ public class UserServiceImpl implements UserService {
         user.setUsername(Optional.ofNullable(request.getUsername()).orElse(user.getUsername()));
         user.setFullName(Optional.ofNullable(request.getFullName()).orElse(user.getFullName()));
         repository.save(user);
+
         return ResponseEntity.ok(modelMapper.map(user, UserResponse.class));
     }
 
     @Override
     public User findUserById(Long id) {
-        return repository.findById(id).orElseThrow(() -> new RuntimeException("User not found"));
+        return repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+    }
+
+    @Override
+    public User findUserByUsername(String username) {
+        return repository.findByUsername(username)
+                .orElseThrow(() -> new RuntimeException("User not found"));
     }
 }
