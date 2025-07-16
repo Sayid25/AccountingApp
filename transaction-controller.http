@@ -1,0 +1,29 @@
+### Get all transactions
+GET http://localhost:8080/api/v1/transaction/get-all
+Accept: application/json
+
+###
+
+### Get all transactions by user ID
+GET http://localhost:8080/api/v1/transaction/get-all/1
+Accept: application/json
+
+###
+
+### Get transactions by date range
+GET http://localhost:8080/api/v1/transaction/get-all/by-date?dateFrom=2025-07-14T00:00:00&dateTo=2025-07-20T23:59:59
+Accept: application/json
+
+###
+
+### Transfer money from one account to another
+POST http://localhost:8080/api/v1/transaction/transfer
+Content-Type: application/json
+Accept: application/json
+
+{
+  "debitAccountNumber": "10000000000000000002",
+  "creditAccountNumber": "10000000000000000004",
+  "amount": 150.75,
+  "description": "Payment for invoice #123"
+}
