@@ -16,20 +16,14 @@ The project uses:
 
 ---
 
-## 🐳 Database setup
+## 🛠 Application and 🐳 Database setup
 
 This project includes a `docker-compose.yml` file to run PostgreSQL as a local container.
 
-**Start the database**:
+**Start the database and application**:
 ```bash
-docker compose up -d
-```
----
-
-## 🛠 Running the application
-After starting the database, run the Spring Boot app:
-```bash
-./gradlew bootRun
+./gradlew clean bootJar
+docker compose up --build -d
 ```
 ---
 ## 📦 API Overview
