@@ -2,11 +2,11 @@
 -- Insert 5 users
 INSERT INTO accounting_schema.user (username, password, full_name)
 VALUES
-    ('alice', '$2a$10$uUmJ0HJ90UQCDoq5IznEO.3Dg6kScnl3uAcVuXKJYl/OlklCmcN9O', 'Alice Johnson'), -- alicepass
-    ('bob',   '$2a$10$JvUGX3k4f3PH8ihzH7Z.mOSNKnGMd8C1MYEv9.CWVa71YXK7B2pM.', 'Bob Smith'),     -- bobpass
-    ('carol', '$2a$10$dNDEf8VE20trNfKHiJcVZOF17M3VjT0rYJZyD6hPVzfnXWlsb6/Hu', 'Carol Williams'), -- carolpass
-    ('dave',  '$2a$10$VVZDCpvlr5EdePF/fUeFMOG/4nEG.VoHcq8mGmN0MglHi2Ewco11C', 'Dave Brown'),     -- davepass
-    ('eve',   '$2a$10$qInbwRz8wS6z4wzNE65mwe6Bk0zTISbwy11AIX94SgexfqkTVee9y', 'Eve Davis');     -- evepass
+    ('alice', '$2a$10$ll6sDm3WXy4cgmeyuCKCmOZAqzXSnCFPswwh7HgIT/XBNY7qcdRgS', 'Alice Johnson'), -- alicepass
+    ('bob',   '$2a$10$Uwf1wxfvuPhaPCdPMy5oY.hnGubqbW9RmPxoJj0OekIkVz9bAjee.', 'Bob Smith'),     -- bobpass
+    ('carol', '$2a$10$EJ8xPxIOcHVUWq8zD36y..ok9zMIUCcBvxf3iDrDq.JJ0HCoiM.Ni', 'Carol Williams'), -- carolpass
+    ('dave',  '$2a$10$Y1qbH9w6iIv78aZgVTZ9geuEj6gTo3W6c8grvylPOBiXFmH/zhBXm', 'Dave Brown'),     -- davepass
+    ('eve',   '$2a$10$OWmHegDWVYzickpi7rwef.myIFPiGU8WJ/xt.uzgVRATeF0qp7e3y', 'Eve Davis');     -- evepass
 
 -- changeset init:6
 -- Insert 5 accounts

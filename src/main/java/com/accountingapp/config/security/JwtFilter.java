@@ -62,7 +62,7 @@ public class JwtFilter extends OncePerRequestFilter {
     private boolean shouldSkipValidation(HttpServletRequest request) {
         String requestURI = request.getRequestURI();
 
-        return requestURI.startsWith("/api/v1/auth/")
+        return requestURI.startsWith("/api/v1/auth")
                 || requestURI.startsWith("/api/v1/transaction/get")
                 || requestURI.startsWith("/api/v1/user");
     }
